@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.animation{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#handG-left,
+#handG-right,
+#Hant_right,
+#Hant_center {
+    animation-name: handG;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes handG {
+    from {
+        translate: 0 -15px;
+    }
+    to {
+        translate: 0 10px;
+    }
+}
+#handB-left,
+#handB-right,
+#Hant_left {
+    animation-name: handB;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: content-box;
+}
+@keyframes handB {
+    from {
+        rotate: 5deg;
+    }
+    to {
+        rotate: -3deg;
+    }
+}
+#foot-right,
+#foot-left,
+#foot-rightB,
+#foot-leftB {
+    animation-name: foot;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes foot {
+    from {
+        translate: 0 5px;
+    }
+    to {
+        translate: 0 0;
+    }
+}
+#HadB,
+#HadG{
+        animation-name: Had;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes Had {
+        from {
+            rotate: 1deg;
+        }
+        to {
+            rotate: 0deg;
+        }
+}
